@@ -18,8 +18,7 @@ public class DemoController {
 
     @PostMapping("/addUser")
     public String createUser(@RequestBody @Valid DemoDto demoDto) {
-        System.out.println(demoDto);
-        return null ;
+        return "User is valid" ;
     }
 
 
